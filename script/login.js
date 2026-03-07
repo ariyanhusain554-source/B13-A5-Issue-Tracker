@@ -1,4 +1,4 @@
-// login.js
+// login
 document.getElementById("signin-btn").addEventListener("click", function() {
     const inputName = document.getElementById("input-name").value;
     const inputPassword = document.getElementById("input-password").value;
