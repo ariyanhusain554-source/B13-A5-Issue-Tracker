@@ -57,6 +57,17 @@
       
    </div>
 
-<script src="./script/login.js"></script>
+<script>
+    document.getElementById("signin-btn").addEventListener("click", function() {
+    const inputName = document.getElementById("input-name").value;
+    const inputPassword = document.getElementById("input-password").value;
+    if (inputName === "admin" && inputPassword === "admin123") {
+        window.location.assign("/home.html");
+    } else {
+        alert("Invalid username or password. Please try again.");
+        return;
+    }
+});
+</script>
 </body>
 </html>
